@@ -103,6 +103,7 @@ padding-right: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .header-nav .header-nav-item > span {
     display: block;
     font-weight: bold;
@@ -114,7 +115,7 @@ padding-right: 100px;
   margin-left: 90px;
 }
 .underlayer-hero-heading.course {
-    padding-left: 145px;
+    text-align: center
 }
 @media screen and (max-width: 767px){
 .header-nav {
@@ -291,11 +292,10 @@ background-size: contain;
     display: flex;
     text-align: center;
 }
-.detail-course-block:first-child {
-    margin-right: 25px;
+
 }
 .detail-course-block {
-    width: 48.5%;
+ 
     border-collapse: separate;
     border: 1px solid #7070701A;
     border-radius: 10px;
@@ -517,6 +517,20 @@ background-size: contain;
     padding-bottom: 40px;
     background-color: #f79314;
 }
+.site-footer-main .footer-info {
+    order: 1;
+}
+.site-footer-main .footer-nav {
+    order: 2;
+}
+.footer-character > img {
+    width: auto;
+    height: 70px;
+}
+.site-footer-main .footer-character {
+    order: 3;
+    align-self: flex-end;
+}
 .footer-info .footer-logo {
     display: inline-block;
     max-width: 280px;
@@ -618,7 +632,7 @@ background-size: contain;
 }
 @media screen and (max-width: 767px){
 .detail-course-block-box {
-    width: 200%;
+    width: 100%;
     margin-top: 36px;
 }
 }
@@ -713,3 +727,10 @@ background-size: contain;
   .page-top {
 	min-width: 1024px!important;
 }
+@media screen and (max-width: 767px){
+.detail-course-block:first-child {
+    margin-right: initial !important;
+    margin-bottom: 60px;
+    align-self: flex-end;
+}
+
